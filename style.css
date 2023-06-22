@@ -1,0 +1,683 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* WARNING */
+
+.warning-block {
+    padding: 16px 0px 15px 0px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+.warning_h1 {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* PART 1 */
+
+#part1 {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-bottom: 5px solid black;
+}
+
+.h1-part1 {
+    font-family: 'Audiowide';
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 122px;
+    color: black;
+    max-width: 750px;
+}
+
+.right-container-part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.social-container {
+    display: flex;
+    gap: 25px;
+}
+
+.bottom-right-container-part1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.change-language {
+    display: flex;
+    gap: 25px;
+    align-items: flex-end;
+}
+
+.site-language-active {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.site-language {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.h2-part1 {
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: #1E1E1E;
+}
+
+/* ACCORDIONS */
+
+.accordions-container {
+    width: 100%;
+}
+
+.accordion {
+    box-sizing: content-box;
+    box-sizing: border-box;
+    padding: 50px;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.opener-accrodion-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h1-accordion {
+    font-family: 'Audiowide';
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 122px;
+    color: black;
+}
+
+.content-accordion {
+    max-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    transition: .2s ease-in-out;
+}
+
+.content-accordion-active {
+    max-height: 200rem;
+    margin-top: 50px;
+    visibility: visible;
+    overflow: visible;
+    opacity: 1;
+    transition: .2s ease-in-out;
+}
+
+#opener-accordion-button {
+    width: 122px;
+    border-radius: 200px;
+    background-color: white;
+    border: 2px solid black;
+    transition: .2s ease-in-out;
+}
+
+#opener-accordion-button:hover {
+    background-color: black;
+    fill: red;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+#opener-accordion-button:hover > .arrow-accordion-hover {
+    fill: white;
+    transition: .1s ease-in-out;
+}
+
+.opener-accordion-button-active {
+    transform: rotate(180deg);
+}
+
+.aboutme-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.h1-aboutme {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.aftertext-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+/* PROJECTS */
+
+.sort-block {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.sort-container {
+    display: flex;
+    gap: 25px;
+}
+
+.sort-btn:hover {
+    cursor: pointer;
+}
+
+.sort-btn-active {
+    outline: 2px solid black;
+}
+
+.kfund-block {
+    padding: 50px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.h1-projects {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Audiowide';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 82px;
+    color: #000000; 
+}
+
+.h2-projects {
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.gobtn {
+    margin: 50px auto 0px auto;
+    text-align: center;
+    padding: 25px 0px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    background-color: black;
+    color: white;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    transition: .2s ease-in-out;
+}
+
+.gobtn:hover {
+    background-color: white;
+    color: black;
+    outline: 2px solid black;
+    transition: .2s ease-in-out;
+}
+
+.projects-block__grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 50px;
+}
+
+.projects-block__grid__line {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.card-project {
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.h3-projects {
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.statistic-block {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.statistic {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.statistic-inside {
+    display: flex;
+    gap: 10px;
+}
+
+.h4-projects {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+/* PRICES */
+
+.prices-container {
+    width: 100%;
+    padding: 0px 150px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h1-price {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+
+.h2-price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 20px 50px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left-container {
+    display: flex;
+    gap: 50px;
+}
+
+.h1-footer {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.gmail-footer {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+/* ORDER PAGE */
+
+.part1-order {
+    padding: 0px 200px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+}
+
+.contacts-order {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-container {
+    display: flex;
+}
+
+.h1-part1-order {
+    font-family: 'Audiowide';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 82px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.h2-part1-order {
+    margin-left: 10px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000; 
+}
+
+/* NOTIFICATION GMAIL */
+
+.notification-container {
+    padding: 0px 200px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.notififcation {
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.h1-notification {
+    text-align: center;
+    color: #000;
+    font-size: 32px;
+    font-family: Inter;
+    font-weight: 500;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 1170px) {
+    #part1 {
+        display: block;
+    }
+
+    .projects-block__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sort-block {
+        display: none;
+    }
+
+    .aftertext-container {
+        display: none;
+    }
+
+    .h1-part1 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .right-container-part1 {
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .bottom-right-container-part1 {
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .prices-container {
+        padding: 0;
+    }
+
+    /* ORDER */
+
+    .part1-order {
+        padding: 0px 50px;
+    }
+
+    .contacts-order {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .h1-notification {
+        font-size: 24px;
+    }
+
+    .notififcation {
+        padding: 25px;
+        box-sizing: border-box;
+        width: 100%;
+        border: 2px solid black;
+    }
+
+    .notification-container {
+        padding: 0px 50px;
+    }
+
+    .h1-part1-order {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .h2-part1-order {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .contact-container {
+        align-items: center;
+        gap: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+
+    .h1-part1 {
+        font-size: 64px;
+        line-height: 82px;
+    }
+
+    .opener-accrodion-container {
+        align-items: center;
+    }
+
+    #opener-accordion-button {
+        height: 100px;
+        width: 100px;
+    }
+
+    .h1-accordion {
+        font-size: 64px;
+        line-height: 82px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+
+    .h1-part1 {
+        font-size: 42px;
+        line-height: 64px;
+    }
+
+    .opener-accrodion-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #opener-accordion-button {
+        height: 100px;
+        width: 100px;
+    }
+
+    .h1-accordion {
+        font-size: 52px;
+        line-height: 82px;
+    }
+
+    .h1-projects {
+        font-size: 52px;
+        line-height: 64px;
+    }
+
+    .prices-container {
+        align-items: center;
+    }
+
+    .price {
+        text-align: center;
+        display: block;
+    }
+
+    .h1-price {
+        font-size: 32px;
+    }
+
+    .h2-price {
+        font-size: 28px;
+    }
+
+    .footer-left-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+
+    #part1 {
+        margin-top: 80px;
+    }
+
+    .h1-aboutme {
+        font-size: 18px;
+        line-height: 32px;
+        
+    }
+
+    .h1-part1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .bottom-right-container-part1 {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .warning-block {
+        padding: 16px 15px;
+    }
+
+    .h1-projects {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .h2-projects {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .h1-accordion {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    #opener-accordion-button {
+        height: 80px;
+        width: 80px;
+    }
+
+    #opener-accordion-button > .arrow-accordion-hover {
+        height: 30px;
+        width: 30px;
+    }
+
+}
