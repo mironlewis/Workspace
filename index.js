@@ -5,7 +5,6 @@ document.querySelectorAll('.accordion').forEach((acc) => {
     accordionButton.addEventListener('click', () => {
         acc.lastElementChild.classList.toggle('content-accordion-active');
         accordionButton.classList.toggle('opener-accordion-button-active');
-        
     });
 });
 
